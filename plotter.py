@@ -26,5 +26,6 @@ class FunctionPlotter:
             self.ax.set_xlabel("x")
             self.ax.set_ylabel("y")
             self.ax.set_title(f"График функции: {function}")
+            self.ax.grid(True)
         except Exception as e:
             raise ValueError(f"Ошибка при построении графика: {e}")
